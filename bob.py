@@ -1,7 +1,7 @@
 def response(phrase):
-    if phrase.endswith('?') and phrase.isupper():
+    if phrase.strip().endswith('?') and phrase.isupper():
         return "Calm down, I know what I'm doing!"
-    elif phrase.endswith('?'):
+    elif phrase.strip().endswith('?'):
         return "Sure."
     elif phrase.isupper():
         return "Whoa, chill out!"
